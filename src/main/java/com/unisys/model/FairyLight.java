@@ -1,8 +1,6 @@
 package com.unisys.model;
 
-import com.unisys.controller.FairyLightImplementor;
-
-public class FairyLight {
+public class FairyLight{
 
     private Color color;
     private boolean on;
@@ -12,6 +10,15 @@ public class FairyLight {
         this.color = color;
         this.on = on;
         this.number = number;
+    }
+
+    public void setOn(boolean on) {
+        this.on = on;
+        System.out.println(this);
+    }
+
+    public Color getColor() {
+        return color;
     }
 
     @Override
